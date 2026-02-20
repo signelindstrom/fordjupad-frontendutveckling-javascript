@@ -1,0 +1,150 @@
+/* all, or multiple, pages */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background-color: darkslateblue;
+  color: aliceblue;
+}
+
+button {
+  border-radius: 10px;
+  width: 10em;
+  padding: 5px;
+  border: 1px solid aliceblue;
+}
+
+button:hover {
+  background-color: aliceblue;
+  color: darkslateblue;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+/* ----------------------- */
+/* startpage, index.html */
+#loginSection {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  top: 50px;
+}
+
+#loginForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid darkslateblue;
+}
+
+#loginForm > * {
+  margin: 10px;
+}
+
+#loginForm > input {
+  border-radius: 10px;
+  width: 15em;
+  padding: 10px;
+  background-color: aliceblue;
+  color: darkslateblue;
+}
+
+.errorMessage {
+  font-style: italic;
+  padding: 20px;
+}
+
+
+
+/* ------------------ */
+/* courses.html */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5em;
+  text-align: center;
+}
+
+header > * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#loggedInUserDisplay {
+  text-align: center;
+  padding: 10px;
+}
+
+#coursesHeadline {
+  padding: 20px;
+  font-style: italic;
+}
+
+#courseSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#courseList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  justify-content: space-between;
+  
+}
+
+#courseList > section {
+  padding: 10px;
+  margin: 10px;
+  width: 30%;
+  height: 15em;
+  border: 2px solid snow;
+  border-radius: 10px;
+}
+
+#courseList > section > * {
+  margin: 2px;
+}
+
+
+
+/* ----------------- */
+/* quiz.html */
+#quizInfo {
+  text-align: center;
+  font-style: italic;
+  opacity: 70%;
+  padding: 30px;
+}
+#quizSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#quizSection > * {
+  width: 40%;
+  border: 2px aliceblue solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.quizListItem {
+  padding: 5px;
+}
+
+input[type="radio"] {
+  margin: 5px;
+  width: 1.2em;
+  height: 1.2em;
+}
